@@ -11,7 +11,7 @@ console.log(partsNeeded)
 // 2. Create a variable called 'supplyChanges' whose value is an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11.
 console.log('2. Create supplyChanges:');
-let supplyChanges = [3, 5, -6, 0, 7, 11];
+let supplyChanges = [1, 3, 5, -6, 0, 7, 11];
 console.log(supplyChanges);
 
 // 3. Create a variable called 'secondItem' and assign it the value of the second
@@ -45,7 +45,7 @@ let negatives = [];
 let zeroes = [];
 
 for(let i = 0; i < supplyChanges.length; i++) {
-  if(supplyChanges[i] > 1) {
+  if(supplyChanges[i] > 0) {
     positives.push(supplyChanges[i]);
   } else if (supplyChanges[i] < 0 && supplyChanges[i] != 0) {
     negatives.push(supplyChanges[i]);
@@ -69,7 +69,7 @@ let stretchNegatives = [];
 let stretchZeroes = [];
 
 for(num of supplyChanges) {
-  if(num > 1) {
+  if(num > 0) {
     stretchPositives.push(num);
   } else if (num < 0 && num != 0) {
     stretchNegatives.push(num);
